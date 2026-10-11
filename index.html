@@ -64,6 +64,38 @@
             background: #eee;
         }
 
+        /* Instagram ボタン（中央・目立つ） */
+        .insta-cta {
+            text-align: center;
+            margin: 2.5rem 0 0;
+        }
+        .insta-cta .label {
+            display: block;
+            font-size: 1rem;
+            color: var(--color-text-light);
+            margin-bottom: 0.9rem;
+        }
+        .insta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 14px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(90deg, #F58529, #DD2A7B 55%, #8134AF);
+            border: none;
+            border-radius: 999px;
+            text-decoration: none;
+            box-shadow: 0 4px 14px rgba(221, 42, 123, 0.35);
+            transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+        }
+        .insta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(221, 42, 123, 0.45);
+            opacity: 1;
+        }
+
         footer {
             background: var(--color-white); padding: 2rem; text-align: center;
             border-top: 2px solid var(--color-border); margin-top: 3rem;
@@ -79,7 +111,7 @@
 <body>
     <header>
         <h1>樋川木工場</h1>
-        <p>木 注文家具・建具</p>
+        <p>木材 注文家具・建具</p>
     </header>
 
     <main>
@@ -120,7 +152,10 @@
                 <img src="16.jpg" alt="制作例16" loading="lazy">
                 <img src="17.jpg" alt="制作例17" loading="lazy">
             </div>
-            <p style="font-size: 0.95rem; color: var(--color-text-light); margin-top: 1rem;">最新の施工例はこちら <a href="https://www.instagram.com">Instagram →</a></p>
+            <div class="insta-cta">
+                <span class="label">最新の施工例はこちら</span>
+                <a class="insta-btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram で見る →</a>
+            </div>
         </section>
 
         <section class="section">
